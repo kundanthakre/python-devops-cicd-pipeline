@@ -1,5 +1,3 @@
-```text id="pl5ng5"
 flask
-gunicorn
 pytest
-```
+requests
