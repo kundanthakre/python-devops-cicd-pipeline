@@ -1,11 +1,12 @@
-from app import app as flask_app
+from app import app   # IMPORTANT: import Flask instance, not module
 
 def test_home():
-    client = flask_app.test_client()
-    response = client.get('/')
+    client = app.test_client()
+    response = client.get("/")
     assert response.status_code == 200
 
+
 def test_health():
-    client = flask_app.test_client()
-    response = client.get('/health')
+    client = app.test_client()
+    response = client.get("/health")
     assert response.status_code == 200
