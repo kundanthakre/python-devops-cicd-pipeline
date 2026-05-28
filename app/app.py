@@ -7,7 +7,7 @@ app = Flask(__name__)
 def home():
     return jsonify({
         "status": "running",
-        "application": "python-devops-cicd",
+        "application": "python-devops-cicd-cd",
         "hostname": socket.gethostname()
     })
 
@@ -17,5 +17,5 @@ def health():
         "health": "ok"
     })
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
