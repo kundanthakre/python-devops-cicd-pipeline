@@ -1,4 +1,4 @@
-from app.app import app as flask_app
+from app import app as flask_app
 
 def test_home():
     client = flask_app.test_client()
