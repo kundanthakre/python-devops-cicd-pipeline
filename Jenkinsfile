@@ -4,7 +4,7 @@ pipeline {
 agent any
 
 environment {
-    APP_SERVER = "172.31.45.171"
+    APP_SERVER = "43.204.30.170"
     APP_DIR = "/home/ubuntu/python-app"
 }
 
